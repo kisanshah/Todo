@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="todo">TODO</string>
+    <string name="complete_project">Complete project</string>
+</resources>

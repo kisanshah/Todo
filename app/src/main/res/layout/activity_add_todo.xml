@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AddTodo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter title" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/desc"
+            android:drawableLeft="@drawable/desc"
+            android:drawablePadding="15dp"
+            android:hint="Add detail" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/calendar"
+            android:drawableLeft="@drawable/calendar"
+            android:drawablePadding="15dp"
+            android:editable="false"
+            android:hint="Add date" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/reminder"
+            android:drawableLeft="@drawable/reminder"
+            android:drawablePadding="15dp"
+            android:editable="false"
+            android:hint="Add reminder" />
+    </LinearLayout>
+
+
+</LinearLayout>
