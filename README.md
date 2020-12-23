@@ -1,7 +1,9 @@
 # Todo
-## Basic application to store your day to day todos.
+## Basic application to store your day to day task.
 
 ## Features
+
+* User friendly UI
 * Create/Update/Delete Todo
 * Reorder Todo
 * Swipe to delete/complete
