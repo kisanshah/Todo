@@ -135,6 +135,17 @@ public class AddTodo extends AppCompatActivity {
                 }
                 return true;
             case R.id.delete:
+                 if (update) {
+                    Snackbar.make(task_desc, "Delete todo?", Snackbar.LENGTH_LONG).setAction("Ok", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            todoViewModel.deleteTodo(todo);
+                            finish();
+                        }
+                    }).show();
+                } else {
+                    finish();
+                }
                 return true;
             default:
                 return false;
